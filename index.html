@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Decodificador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Decodificador de Texto</h1>
+        <textarea id="input-text" placeholder="Cole o texto aqui"></textarea>
+        <select id="operation-method">
+            <option value="encode">Encriptar</option>
+            <option value="decode">Decodificar</option>
+        </select>
+        <select id="encode-decode-method">
+            <option value="base64">Base64</option>
+            <option value="url">URL Encoding</option>
+            <option value="hex">Hexadecimal</option>
+            <option value="rot13">ROT13</option>
+        </select>
+        <button onclick="processText()">Processar</button>
+        <textarea id="output-text" placeholder="O resultado aparecerá aqui" readonly></textarea>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
